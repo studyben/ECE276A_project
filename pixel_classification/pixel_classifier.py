@@ -27,6 +27,7 @@ class PixelClassifier():
     #self.X, self.y = np.concatenate((x1, x2, x3)), np.concatenate((y1, y2, y3))
 
   def training(self):
+
     self.x1Cov = np.cov(np.matrix.transpose(self.x1))
     self.x2Cov = np.cov(np.matrix.transpose(self.x2))
     self.x3Cov = np.cov(np.matrix.transpose(self.x3))
@@ -54,7 +55,7 @@ class PixelClassifier():
       xs2 = multivariate_normal.pdf(xs, mean=self.x2Mean, cov=self.x2Cov)
       xs3 = multivariate_normal.pdf(xs, mean=self.x3Mean, cov=self.x3Cov)
       print(np.argmax([xs1, xs2, xs3]))
-      y = np.append(y, np.argmax([xs1, xs2, xs3]))
+      y = np.append(y, np.argmax([xs1, xs2, xs3]) + 1)
     
     # YOUR CODE BEFORE THIS LINE
     ################################################################

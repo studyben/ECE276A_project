@@ -19,6 +19,6 @@ if __name__ == '__main__':
   myPixelClassifier.training()
   y = myPixelClassifier.classify(X)
   
- # print('Precision: %f' % (sum(y==3)/y.shape[0]))
+  print('Precision: %f' % (sum(y==3)/y.shape[0]))
 
   
