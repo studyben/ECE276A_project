@@ -1,15 +1,12 @@
-# GradeScope Autograder
-The code that the GradeScope Autograder uses to test your code is provided here for reference.
-It is not required to run this code but it may help you debug the code you upload to GradeScope.
-If you would like to run the Autograder on your local machine, which is optional, you may follow the steps below:
+# Run the Pixel Classification
+1. add the data under pixel_classification/data/validation  2. open the test_pixel_classifier and switch to correct directory. 3. pixel_classifier can also been imported as a class.
 
-1. Install the GradeScope autograder and other required packages from `requirements.txt`
+# Run the Pixel Classification
+1. open the test_bin_detector.py 2. run test_bin_detector.py
 
-2. Run the tests:
-
-```
-python3 run_tests.py
-```
+# Run the Autograder
+1. open the run_tests.py
+2. Run the script
 
 
 
